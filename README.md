@@ -2,3 +2,4 @@
 
 - Integrantes:
 - Andres Felipe Quintero Bautista
+- Juan Felipe Arrieta Guerra
