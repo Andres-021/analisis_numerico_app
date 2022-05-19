@@ -53,7 +53,8 @@ const Index = () => {
                       borderRadius: '5px',
                       border:"0px solid black",
                       borderColor:"black", 
-                      boxShadow: "0px 0px 2px"
+                      boxShadow: "0px 0px 2px",
+                      height: '100%'
                     }}
                   >
                     <Col lg={12}  className='mt-3'>
