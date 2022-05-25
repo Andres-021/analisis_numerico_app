@@ -3,21 +3,34 @@ import img2 from '../../img/matematicas-tumblr-gif-10.gif';
 import homer from '../../img/homer-matematico.jpg';
 
 const Introduction = () => {
-  //document.body.style.background = `url(${homer})`;
-  document.body.style.background = "#6AD6FF";
+  document.body.style.background = `rgba(0, 0, 0, 0.7) url(${homer})`;
+  //document.body.style.background = "#6AD6FF";
   document.body.style.backgroundAttachment = "fixed";
-  
+  document.body.style.backgroundRepeat = "no-repeat";
+  document.body.style.backgroundBlendMode = "darken";
 
   const principal = {
     display: "flex",
     color: "white",
+    fontSize: "100px",
+    fontFamily: "roboto",
     justifyContent: "center",
     alignItems: "center",
-    fontSize: "1000px",
-    fontFamily: "Roboto",
     marginTop: "25%",
     marginBottom: "25%",
   }
+
+  const principal2 = {
+    display: "flex",
+    color: "black",
+    justifyContent: "center",
+    alignItems: "center",
+    paddingTop: "25%",
+    paddingBottom: "25%",
+    background: "white",
+    padding: "25%"
+  }
+
 
   return (
     <>
@@ -25,13 +38,10 @@ const Introduction = () => {
         <h1>Analisis numerico</h1>
       </div>
 
-      <div>
-        <font color="" >
+      <div style={principal2}>
+        <div>
           <h4>PROYECTO FINAL ANALISIS NUMERICO</h4>
-        </font>
-      </div>
-
-      <div>
+        </div>
         
         <div>
           <p>
@@ -40,25 +50,33 @@ const Introduction = () => {
             asignatura, realizada en el transcurso de el 2022-1 (Segundo Semestre
             de dosmil veintidos).
           </p>
-          <div>
-            <font color="">
-              {" "}
-              <h4>OBJETIVOS DEL PROYECTO</h4>
-            </font>
-          </div>
+        </div>
+      </div>
 
+      <div style={principal2}>
+        <div>
+          <h1>
+            <h4>OBJETIVOS DEL PROYECTO</h4>
+          </h1>
+        </div>
+
+        <div>
           <p>
             El objetivo de este proyecto es proporcionar una herramienta fácil de
             usa e interactiva, que nos permita realizar cálculos referentes al
             Analisis Numericos, de manera automatizada y rapída.
           </p>
+        </div>
+      </div>
 
-          <div>
-            <font color="">
-              {" "}
-              <h4>ANALISIS NUMERICO</h4>
-            </font>
-          </div>
+      <div style={principal2}>
+        <div>
+          <font color="">
+            <h4>ANALISIS NUMERICO</h4>
+          </font>
+        </div>
+
+        <div>
           <p>
             El Calculo Numerico, o como tambien se le denomina, el Analisis
             numerico, es la rama de las Matematicas que estudia los metodos
@@ -80,17 +98,6 @@ const Introduction = () => {
             ecuaciones diferenciales ordinarias, y los problemas de contorno para
             ecuaciones en derivadas parciales.
           </p>
-
-          <div>
-            <img
-              style={{
-                marginTop: "50px",
-                width: "100%",
-                height: "600px",
-              }}
-              src=""
-            ></img>
-          </div>
         </div>
       </div>
     </>
