@@ -11,8 +11,8 @@ import Introduction from './Introduction';
 
 const metodos = [
   {name: "Biseccion", link: "/biseccion"},
-  {name: "Punto Falso", link: "/punto_falso"},
-  {name: "Newton raphson", link: "/newton_raphson"},
+  // {name: "Punto Falso", link: "/punto_falso"},
+  // {name: "Newton raphson", link: "/newton_raphson"},
 ];
 
 const Index = () => {
@@ -20,58 +20,28 @@ const Index = () => {
 
   return(
     <Container className="mt-3">
-      <Row className="">
-          <Col className="mb-3">
-            <div
-              style={{
-                borderRadius: '5px',
-                border:"0px solid black",
-                borderColor:"black", 
-                boxShadow: "0px 0px 2px"
-              }}
-            >
-              <Row>
-                <Col lg className="d-grid mt-3">
-                  <Button className="" variant='success'>Comparar datos guardados</Button>
-                </Col>
-              </Row>
-              <ListGroupBtstp onClick={(e)=>setTab(e)} metodos={metodos}/>
-            </div>
+       <Row className="justify-content-center">
+          <Col lg={1}>
+
           </Col>
-          <Col sm={9}>
-            <Row>
-              
-              <Col lg={12}>
-                {/* <Row lg="auto" className='mb-3'>
-                  <Col>
-                    <Select/>
-                  </Col>
-                </Row> */}
-                <Row>
+          <Col sm={8}>
+            
                   <div
                     style={{
+                      background: "white",
                       borderRadius: '5px',
                       border:"0px solid black",
                       borderColor:"black", 
-                      boxShadow: "0px 0px 2px",
-                      height: '100%'
+                      boxShadow: "0px 0px 6px",
+                      height: '100%',
+                      padding: '25px'
                     }}
                   >
                     <Col lg={12}  className='mt-3'>
-                      {
-                        tab === '/biseccion'?
-                          <IndexBiseccion />
-                        : tab === '/punto_falso'?
-                          <IndexBiseccion/> 
-                        : tab === '/newton_raphson'?
-                          <IndexNewtonRaphson/>
-                        : <Introduction/>
-                      }
+                      <IndexBiseccion />
+                      
                     </Col>
                   </div>
-                </Row>
-              </Col>
-            </Row>
           </Col>
       </Row>
     </Container>

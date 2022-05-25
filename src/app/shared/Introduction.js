@@ -3,7 +3,7 @@ const Introduction = () => {
   return(
     <>
       <div>
-      <font color="red"> <h4>PROYECTO FINAL ANALISIS NUMERICO</h4></font>
+      <font color=""> <h4>PROYECTO FINAL ANALISIS NUMERICO</h4></font>
         
       </div>
       <div>
@@ -17,7 +17,7 @@ const Introduction = () => {
         
         </p>
         <div>
-        <font color="red"> <h4>OBJETIVOS DEL PROYECTO</h4></font>
+        <font color=""> <h4>OBJETIVOS DEL PROYECTO</h4></font>
        
       </div>
       
@@ -31,7 +31,7 @@ const Introduction = () => {
 
 
         <div>
-        <font color="red"> <h4>ANALISIS NUMERICO</h4></font>
+        <font color=""> <h4>ANALISIS NUMERICO</h4></font>
         
       </div>
         <p>

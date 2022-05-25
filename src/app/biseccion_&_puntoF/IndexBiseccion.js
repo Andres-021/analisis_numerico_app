@@ -111,7 +111,7 @@ const IndexBiseccion = () => {
                     Error relativo: <Badge><strong>{solucion.EaS}</strong></Badge>
                   </p>
                 </div>
-                <Button variant="primary" onClick={submitSaveData}>Guardar</Button>
+                {/* <Button variant="primary" onClick={submitSaveData}>Guardar</Button> */}
               </Alert>
             </div>
           </Collapse>
@@ -124,6 +124,21 @@ const IndexBiseccion = () => {
         bodyTable={resultados}
         isLoading={isLoading}
       />
+      <Row className="mx-0">
+        <Col className="mt-5">
+        {/* Aqui vas a poner la descripcion del metodo Biseccion*/}
+          <h4>
+            Funcion
+          </h4>
+          <p>
+            dininueeeeeeeeeeeeeeeeeeeeadsadasadsdwaasddasdadasd<br/>
+          </p>
+          <h4>
+            Ecuacion
+          </h4>
+
+        </Col>
+      </Row>
     </>
   );
 }

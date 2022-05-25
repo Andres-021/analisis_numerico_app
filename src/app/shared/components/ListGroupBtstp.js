@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import {ListGroup} from 'react-bootstrap';
 
+
 const ListGroupBtstp = (props) => {
 
   const navigate = useNavigate();
@@ -15,7 +16,7 @@ const ListGroupBtstp = (props) => {
       <ListGroup defaultActiveKey=''>
         {
           props.metodos.map((map) =>(
-            <ListGroup.Item key={map.name} action onClick={() => submitUrl(map.link)}>
+            <ListGroup.Item key={map.name} action href="/biseccion"  onClick={() => submitUrl(map.link)}>
               {map.name}
             </ListGroup.Item>
           ))
