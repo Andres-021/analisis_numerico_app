@@ -73,7 +73,7 @@ const IndexBiseccion = () => {
 
   return (
     <>
-      <Select />
+      {/* <Select /> */}
       <FormBtstpBiseccion
         onSubmit={submitDatos}
         input={input}

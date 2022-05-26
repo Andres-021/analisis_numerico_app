@@ -1,49 +1,52 @@
+import {useEffect} from 'react';
 import img1 from '../../img/27569-matematicas.jpg';
 import img2 from '../../img/matematicas-tumblr-gif-10.gif';
 import homer from '../../img/homer-matematico.jpg';
 
 const Introduction = () => {
-  document.body.style.background = `rgba(0, 0, 0, 0.7) url(${homer})`;
-  //document.body.style.background = "#6AD6FF";
-  document.body.style.backgroundAttachment = "fixed";
-  document.body.style.backgroundRepeat = "no-repeat";
-  document.body.style.backgroundBlendMode = "darken";
+  
+  useEffect(() => {
+    document.body.style.background = `rgba(0, 0, 0, 0.7) url(${homer})`;
+    //document.body.style.background = "#6AD6FF";
+    document.body.style.backgroundAttachment = "fixed";
+    document.body.style.backgroundRepeat = "no-repeat";
+    document.body.style.backgroundBlendMode = "darken";
+  }, [])
 
-  const principal = {
-    display: "flex",
-    color: "white",
-    fontSize: "100px",
+  const ajustar = {
+    display: "grid",
+    textAlign: "center",
     fontFamily: "roboto",
-    justifyContent: "center",
-    alignItems: "center",
-    marginTop: "25%",
-    marginBottom: "25%",
+    fontSize: "20px"
   }
 
-  const principal2 = {
-    display: "flex",
+  const principal = {
+    color: "white",
+    marginTop: "15%",
+    marginBottom: "20%",
+    paddingTop: "65px"
+  }
+
+  const wrapper = {
     color: "black",
-    justifyContent: "center",
-    alignItems: "center",
-    paddingTop: "25%",
-    paddingBottom: "25%",
     background: "white",
-    padding: "25%"
+    padding: "15%"
   }
 
 
   return (
-    <>
+    <div style={ajustar}>
       <div style={principal}>
-        <h1>Analisis numerico</h1>
+        <h1 style={{
+          fontSize: "125px",
+          fontWeight: "bold"
+        }}>Análisis numérico</h1>
       </div>
 
-      <div style={principal2}>
+      <div style={wrapper}>
         <div>
           <h4>PROYECTO FINAL ANALISIS NUMERICO</h4>
-        </div>
-        
-        <div>
+
           <p>
             En este proyecto se intenta demostrar los conocimientos impartido por
             nuestro profesor de analisis numerico. Durante el desarrollo de esta
@@ -53,14 +56,12 @@ const Introduction = () => {
         </div>
       </div>
 
-      <div style={principal2}>
+      <div style={wrapper}>
         <div>
           <h1>
             <h4>OBJETIVOS DEL PROYECTO</h4>
           </h1>
-        </div>
 
-        <div>
           <p>
             El objetivo de este proyecto es proporcionar una herramienta fácil de
             usa e interactiva, que nos permita realizar cálculos referentes al
@@ -69,14 +70,10 @@ const Introduction = () => {
         </div>
       </div>
 
-      <div style={principal2}>
+      <div style={wrapper}>
         <div>
-          <font color="">
-            <h4>ANALISIS NUMERICO</h4>
-          </font>
-        </div>
+          <h4>ANALISIS NUMERICO</h4>
 
-        <div>
           <p>
             El Calculo Numerico, o como tambien se le denomina, el Analisis
             numerico, es la rama de las Matematicas que estudia los metodos
@@ -100,7 +97,7 @@ const Introduction = () => {
           </p>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

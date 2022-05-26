@@ -28,18 +28,18 @@ const Index = () => {
             
                   <div
                     style={{
-                      marginTop: "65px",
+                      marginTop: "75px",
                       background: "white",
                       borderRadius: '5px',
                       border:"0px solid black",
                       borderColor:"black", 
                       boxShadow: "0px 0px 6px",
-                      height: '100%',
+                      height: '550px',
                       padding: '25px',
-                      overflowY: 'auto'
+                      overflowY: "scroll"
                     }}
                   >
-                    <Col lg={12}  className='mt-3'>
+                    <Col lg={12}  className='mt-3' >
                       <IndexBiseccion />
                       
                     </Col>
