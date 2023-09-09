@@ -1,10 +1,12 @@
-const Funcion = (fun, xr, xl) => {
+const Funcion = (string, xr, xl) => {
   const fxrList = [];
   const fxlList = [];
 
   let fxr = 0;
   let fxl = 0;
   let res_fxr_fxl = 0;
+
+  const fun = string.toLowerCase()
   
   for(var i = 0; i<fun.length; i++){
     fxrList.push(fun.charAt(i));
