@@ -172,6 +172,9 @@ const IndexBiseccion = () => {
           <p className="mb-4">
           <img src={imagenes} />
           </p>
+          <p className="mb-4">
+            Ejemplo de uso de la funcion: x^4+3*x^3-2
+          </p>
           
 
           <h4>Ecuacion</h4>
