@@ -2,6 +2,7 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Index from './app/biseccion_&_puntoF/index';
 import Introduction from './app/shared/Introduction';
 import NavBarBtstp from './app/shared/components/NavBarBtstp';
+import Footer from './app/shared/components/Footer.js'
 import img from './img/58914-matematicas.jpg';
 import img1 from './img/27569-matematicas.jpg';
 import img2 from './img/56855-matematicas.jpg';
@@ -23,6 +24,7 @@ const App = () => {
         {/* <Footer/> */}
       </Router>
       <NavBarBtstp/>
+      <Footer/>
     </>
   );
 }
