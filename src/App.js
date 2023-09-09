@@ -17,8 +17,8 @@ const App = () => {
     <>
       <Router>
         <Routes>
-          <Route path="/biseccion" element={<Index/>}/>
-          <Route path="/" element={<Introduction/>}/>
+          <Route path="/" element={<Index/>}/>
+          {/* <Route path="/" element={<Introduction/>}/> */}
         </Routes>
         {/* <Footer/> */}
       </Router>

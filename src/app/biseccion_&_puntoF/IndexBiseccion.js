@@ -164,10 +164,10 @@ const IndexBiseccion = () => {
           <h4>Funcion</h4>
           <p>
             El método de bisección se aplica a funciones algebraicas o
-            trascendentes y proporciona únicamente raıces reales. Tiene su
+            trascendentes y proporciona únicamente raices reales. Tiene su
             origen en un popular algoritmo de búsqueda de datos en arreglos
             vectoriales denominado búsqueda binaria. Es un método cerrado, es
-            decir, requiere de un intervalo en el cual esté atrapada una raız
+            decir, requiere de un intervalo en el cual esté atrapada una raiz
           </p>
           <p className="mb-4">
           <img src={imagenes} />
